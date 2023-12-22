@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import TaskCard from './TaskCard';
 
 const ToDoTask = () => {
+    const [tasks,setTasks]=useState([])
+
+    useEffect(()=>{
+        fetch('http://localhost:5000/getTask')
+        .then(res=>res.json())
+        .then(data=>setTasks(data))
+    },[])
+
+    const refetch = () => {
+       
+        fetch('http://localhost:5000/getTask')
+            .then(res => res.json())
+            .then(data => setTasks(data))
+            .catch(error => console.error('Error fetching data:', error));
+    };
     
     return (
         <div>
@@ -16,6 +32,11 @@ const ToDoTask = () => {
                 </div>
             </div>
             <hr />
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                {
+                  tasks.map(task=><TaskCard key={task._id} refetch={refetch} task={task}></TaskCard>)
+                }
+            </div>
         </div>
     );
 };

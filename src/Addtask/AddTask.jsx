@@ -16,29 +16,31 @@ const AddTask = () => {
 
         const addTask = { name, task_name, date, priority}
         console.log(addTask)
-         navigate('/dashboard/task')
-            // fetch('https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/users', {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "application/json"
+        
+            fetch('http://localhost:5000/addTask', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
 
-            //     },
-            //     body: JSON.stringify(addCar)
+                },
+                body: JSON.stringify(addTask)
 
-            // })
-            // .then(res => res.json())
-            // .then(data => {
-            //     console.log(data)
-            //     if (data.insertedId) {
-            //         Swal.fire({
-            //             position: 'top-end',
-            //             icon: 'success',
-            //             title: 'User Added Successfully',
-            //             showConfirmButton: false,
-            //             timer: 1500
-            //         })
-            //     }
-            // })
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.insertedId) {
+                    Swal.fire({
+                        position:'top-end',
+                        icon: 'success',
+                        title: 'Add Task Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+
+                }
+                navigate('/dashboard/task')
+            })
     }
     return (
         <div className='bg-[#F4F3F0] p-24  '>
