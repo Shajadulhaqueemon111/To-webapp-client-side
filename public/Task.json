@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Meeting with Team",
+        "description": "Conduct a team meeting to discuss project updates and plans.",
+        "status": "Incomplete",
+        "date": "2023-01-10",
+        "image":"https://i.ibb.co/3YSGgFT/monthly-task-list-1024x576.webp"
+      },
+     
+      
+      
+      {
+        "title": "Code Review",
+        "description": "Review and refactor the code for better performance.",
+        "status": "Incomplete",
+        "date": "2023-01-15",
+        "image":"https://i.ibb.co/D1LDSFc/6423e6955396ce5635996952-3.jpg"
+      },
+      
+      {
+        "title": "Client Presentation",
+        "description": "Prepare a presentation for the upcoming client meeting.",
+        "status": "Incomplete",
+        "date": "2023-01-20",
+        "image":"https://i.ibb.co/b2xhy0t/How-to-set-due-dates-in-monday-com.webp"
+      },
+     
+      {
+        "title": "Task Management System",
+        "description": "Research and choose a task management system for the project.",
+        "status": "Incomplete",
+        "date": "2023-01-25",
+        "image":"https://i.ibb.co/TKRCV0M/Screen-Shot-2020-12-11-at-13-54-10.webp"
+      },
+     
+      {
+        "title": "Project Deployment",
+        "description": "Plan and execute the deployment of the project by the end of the month.",
+        "status": "Incomplete",
+        "date": "2023-01-31",
+        "image":"https://i.ibb.co/zmHyDNK/9d4ad33f92864d6b7a91a10d13736959.webp"
+      },
+      {
+        "title": "Complete Project Proposal",
+        "description": "Prepare and submit the project proposal by the end of the week.",
+        "status": "Incomplete",
+        "date": "2023-01-05",
+        "image":"https://i.ibb.co/dfK71ZJ/projects.webp"
+      }
+      
+]

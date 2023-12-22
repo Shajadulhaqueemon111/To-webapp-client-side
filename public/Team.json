@@ -1,0 +1,33 @@
+[
+    {
+      "name": "John Doe",
+      "image": "https://i.ibb.co/5hsHxrQ/istockphoto-1150488868-612x612.jpg",
+      "location": "New York"
+    },
+    {
+      "name": "Jane Smith",
+      "image": "https://i.ibb.co/V3mFTq9/istockphoto-1096419446-612x612.jpg",
+      "location": "Los Angeles"
+    },
+    {
+      "name": "Bob Johnson",
+      "image": "https://i.ibb.co/SdyMJjY/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position-1368-132662.jpg",
+      "location": "Chicago"
+    },
+    {
+      "name": "Alice Brown",
+      "image": "https://i.ibb.co/4NcprcT/download-2.jpg",
+      "location": "San Francisco"
+    },
+    {
+      "name": "Chris Wilson",
+      "image": "https://i.ibb.co/Jmxkgkb/images-3.jpg",
+      "location": "Miami"
+    },
+    {
+      "name": "Emily Davis",
+      "image": "https://i.ibb.co/Px1d0Wh/images-4.jpg",
+      "location": "Seattle"
+    }
+  ]
+  
