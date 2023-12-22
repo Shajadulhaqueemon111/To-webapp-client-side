@@ -15,6 +15,7 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Dashboard from '../Dashboard/Dashboard';
 import ToDoTask from '../Dashboard/Task/ToDoTask';
 import AddTask from '../Addtask/AddTask';
+import UpdateTask from '../Update/UpdateTask';
 
   const router = createBrowserRouter([
     {
@@ -57,6 +58,11 @@ import AddTask from '../Addtask/AddTask';
       {
           path:'addTask',
           element:<AddTask></AddTask>
+      },
+      {
+        path:"updateTask/:id",
+        element:<UpdateTask></UpdateTask>,
+        loader:({params})=>fetch(`http://localhost:5000/tasks/${params.id}`)
       },
       ]
 

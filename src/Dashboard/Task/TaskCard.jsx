@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
 import axios from 'axios';
 const TaskCard = ({ task,refetch }) => {
 
-    const { name, task_name, date, priority } = task;
+    const {_id, name, task_name, date, priority } = task;
 
     const bull = (
         <Box
@@ -86,9 +86,11 @@ const TaskCard = ({ task,refetch }) => {
                             <MdOutlineDelete className='text-xl font-bold' />
                         </Button>
                        
-                        <Button style={{ fontSize: '20px' }} size="large">
+                      <Link to={`/dashboard/updateTask/${_id}`}>
+                      <Button  style={{ fontSize: '20px' }} size="large">
                             <FaRegEdit />
                         </Button>
+                      </Link>
                     </CardActions>
                 </div>
 
