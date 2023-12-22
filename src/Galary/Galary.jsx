@@ -7,7 +7,7 @@ const Galary = () => {
 
     useEffect(()=>{
 
-        fetch('/Task.json')
+        fetch('http://localhost:5000/taskGallary')
         .then(res=>res.json())
         .then(data=>setGallary(data))
     },[])
